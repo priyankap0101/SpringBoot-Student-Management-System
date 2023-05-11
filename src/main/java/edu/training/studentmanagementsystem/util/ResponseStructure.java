@@ -1,0 +1,16 @@
+package edu.training.studentmanagementsystem.util;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Component
+@Getter
+@Setter
+public class ResponseStructure<T> {
+
+	private int StatusCode;
+	private String Message;
+	private Object data;
+}
